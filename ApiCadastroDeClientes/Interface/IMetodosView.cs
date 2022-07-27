@@ -2,7 +2,7 @@
 
 namespace ApiCadastroDeClientes.Interface
 {
-    public interface IMetodosView<T> 
+    public interface IMetodosView
     {
 
         public string ValidarNome(string nome);

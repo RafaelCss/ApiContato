@@ -1,14 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+﻿
 using ApiCadastroDeClientes.Data;
-using ApiCadastroDeClientes.Interface;
-using ApiCadastroDeClientes.ViewModel;
-using ApiCadastroDeClientes.Model;
-using System.Configuration;
-using Microsoft.Extensions.Options;
 using ApiCadastroDeClientes.Services;
-using ApiCadastroDeClientes.Funcoes;
-using ApiCadastroDeClientes.Notificacoes;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<CadastroDatabaseSettings>(

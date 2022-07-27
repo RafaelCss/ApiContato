@@ -1,11 +1,10 @@
 ﻿using ApiCadastroDeClientes.Interface;
-using ApiCadastroDeClientes.Notificacoes;
 using Flunt.Notifications;
 using Flunt.Validations;
 
 namespace ApiCadastroDeClientes.Funcoes
 {
-    public class FuncoesBanco : Contract, IMetodosView<INotifiable>
+    public class FuncoesBanco : Notifiable<Notification>, IMetodosView
 
     {
       
@@ -41,13 +40,18 @@ namespace ApiCadastroDeClientes.Funcoes
         public string ValidarDescricao(string descricao)
         {
             Descricao = descricao;
-            AddNotifications(new Contract<INotifiable>().Requires().IsNullOrEmpty(Descricao, Descricao, "Este campo não pode ficar vazio"));
+            AddNotifications(new Contract<FuncoesBanco>()
+            .Requires()
+            .IsNullOrEmpty(Descricao, "Este campo não pode ficar vazio"));
             return Descricao;
         }
 
         public string ValidarEmail(string email)
         {
             Email = email;
+            AddNotifications(new Contract<FuncoesBanco>()
+            .Requires()
+            .IsEmail(Email, "Este campo não pode ficar vazio"));
             return Email;
         }
 
