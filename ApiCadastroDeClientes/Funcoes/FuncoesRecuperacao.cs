@@ -40,7 +40,7 @@ namespace ApiCadastroDeClientes.Funcoes
         public string ValidarDescricao(string descricao)
         {
             Descricao = descricao;
-            AddNotifications(new Contract<FuncoesBanco>()
+            AddNotifications( new Contract<FuncoesBanco>()
             .Requires()
             .IsNullOrEmpty(Descricao, "Este campo não pode ficar vazio"));
             return Descricao;
@@ -51,7 +51,7 @@ namespace ApiCadastroDeClientes.Funcoes
             Email = email;
             AddNotifications(new Contract<FuncoesBanco>()
             .Requires()
-            .IsEmail(Email, "Este campo não pode ficar vazio"));
+            .IsEmail(Email, "Email" ,"Este campo não pode ficar vazio"));
             return Email;
         }
 

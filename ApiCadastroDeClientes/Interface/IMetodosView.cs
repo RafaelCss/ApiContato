@@ -1,8 +1,10 @@
 ﻿
 
+using Flunt.Notifications;
+
 namespace ApiCadastroDeClientes.Interface
 {
-    public interface IMetodosView
+    public interface IMetodosView 
     {
 
         public string ValidarNome(string nome);
