@@ -1,12 +1,14 @@
 ﻿using ApiCadastroDeClientes.Data;
 using ApiCadastroDeClientes.Funcoes;
+using ApiCadastroDeClientes.Interface;
 using ApiCadastroDeClientes.Model;
+using Flunt.Notifications;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 namespace ApiCadastroDeClientes.Services
 {
-    public class Cadastro 
+    public class Cadastro : Notifiable<Notification>
     {
         private readonly IMongoCollection<ContatoCliente> _cadastro;
    
@@ -38,5 +40,7 @@ namespace ApiCadastroDeClientes.Services
         public void Remove(ContatoCliente cadastroR) => _cadastro.DeleteOne(cadastro => cadastro == cadastroR);
 
         public void Remove (string id) => _cadastro.DeleteOne( cadastro => cadastro.Id == id);
+
+
     }
 }

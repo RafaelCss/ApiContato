@@ -56,8 +56,11 @@ namespace ApiCadastroDeClientes.Controllers
         // POST: api/ContatoClientes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<ContatoCliente>> PostContatoCliente(ContatoCliente contatoCliente)
+        public async Task<ActionResult<ContatoCliente>> Post([FromBody]ContatoCliente contatoCliente)
         {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
             _cadastro.Create(contatoCliente);
 
             return CreatedAtAction(nameof(Get), new { id = contatoCliente.Id.ToString() }, contatoCliente);

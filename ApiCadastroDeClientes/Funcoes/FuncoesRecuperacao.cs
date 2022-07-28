@@ -7,6 +7,13 @@ namespace ApiCadastroDeClientes.Funcoes
     public class FuncoesBanco : Notifiable<Notification>, IMetodosView
 
     {
+        # region Construtor
+
+        public FuncoesBanco()
+        {
+
+        }
+    
       
         public FuncoesBanco(string nome, string email, string telefone, string servico, string descricao, DateTime data)
         {
@@ -25,13 +32,13 @@ namespace ApiCadastroDeClientes.Funcoes
         public string Descricao { get; private set; }
         public DateTime DataDia { get; private set; }
 
+        #endregion
 
+        #region Metódos 
 
         public DateTime ValidarData(DateTime data)
         {
             DataDia = DateTime.Now.ToLocalTime();
-            
-
             return DataDia;
         }
 
@@ -40,7 +47,7 @@ namespace ApiCadastroDeClientes.Funcoes
         public string ValidarDescricao(string descricao)
         {
             Descricao = descricao;
-            AddNotifications( new Contract<FuncoesBanco>()
+            AddNotifications( new Contract<INotifiable>()
             .Requires()
             .IsNullOrEmpty(Descricao, "Este campo não pode ficar vazio"));
             return Descricao;
@@ -48,16 +55,23 @@ namespace ApiCadastroDeClientes.Funcoes
 
         public string ValidarEmail(string email)
         {
+         
             Email = email;
-            AddNotifications(new Contract<FuncoesBanco>()
+            AddNotifications(new Contract<INotifiable>()
             .Requires()
+            .IsEmailOrEmpty(Email,"Email","Este campo não pode ficar vazio")
             .IsEmail(Email, "Email" ,"Este campo não pode ficar vazio"));
             return Email;
         }
 
         public string ValidarNome(string nome)
         {
-            Nome = nome;
+          
+           Nome = nome;
+            AddNotifications(new Contract<FuncoesBanco>()
+            .Requires()
+            .IsNotNullOrWhiteSpace(Nome, "Nome", "Este campo não pode ficar vazio")
+            );
             return Nome;
         }
 
@@ -73,6 +87,6 @@ namespace ApiCadastroDeClientes.Funcoes
             return Telefone;
         }
 
-      
+        #endregion
     }
 }

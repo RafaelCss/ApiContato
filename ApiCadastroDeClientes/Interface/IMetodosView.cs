@@ -1,5 +1,4 @@
 ﻿
-
 using Flunt.Notifications;
 
 namespace ApiCadastroDeClientes.Interface
