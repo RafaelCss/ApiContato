@@ -1,4 +1,5 @@
 ﻿using ApiCadastroDeClientes.Interface;
+using ApiCadastroDeClientes.Valaidacoes;
 using Flunt.Notifications;
 using Flunt.Validations;
 
@@ -47,9 +48,9 @@ namespace ApiCadastroDeClientes.Funcoes
         public string ValidarDescricao(string descricao)
         {
             Descricao = descricao;
-            AddNotifications( new Contract<INotifiable>()
+            AddNotifications(new Contrato()
             .Requires()
-            .IsNullOrEmpty(Descricao, "Este campo não pode ficar vazio"));
+            .IsNotNullOrEmpty(Descricao, "Este campo não pode ficar vazio"));
             return Descricao;
         }
 
@@ -57,9 +58,9 @@ namespace ApiCadastroDeClientes.Funcoes
         {
          
             Email = email;
-            AddNotifications(new Contract<INotifiable>()
+            AddNotifications(new Contrato()
             .Requires()
-            .IsEmailOrEmpty(Email,"Email","Este campo não pode ficar vazio")
+            .IsNotEmail(Email,"Email","Este campo não pode ficar vazio")
             .IsEmail(Email, "Email" ,"Este campo não pode ficar vazio"));
             return Email;
         }
@@ -68,7 +69,7 @@ namespace ApiCadastroDeClientes.Funcoes
         {
           
            Nome = nome;
-            AddNotifications(new Contract<FuncoesBanco>()
+            AddNotifications(new Contrato()
             .Requires()
             .IsNotNullOrWhiteSpace(Nome, "Nome", "Este campo não pode ficar vazio")
             );

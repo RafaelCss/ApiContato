@@ -277,3 +277,5 @@ C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Flunt.d
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Flunt.Extensions.Br.dll
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Infra.dll
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Infra.pdb
+C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Dominio.dll
+C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Dominio.pdb

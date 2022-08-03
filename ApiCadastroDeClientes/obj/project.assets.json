@@ -3289,6 +3289,20 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Flunt": "2.0.5",
+          "Flunt.Extensions.Br": "1.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dominio.dll": {}
+        }
+      },
       "Infra/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -10303,6 +10317,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Domini/Dominio.csproj",
+      "msbuildProject": "../Domini/Dominio.csproj"
+    },
     "Infra/1.0.0": {
       "type": "project",
       "path": "../ClassLibrary1/Infra.csproj",
@@ -10311,6 +10330,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Dominio >= 1.0.0",
       "Flunt >= 2.0.5",
       "Flunt.Extensions.Br >= 1.0.1",
       "Infra >= 1.0.0",
@@ -10328,9 +10348,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\ApiCadastroDeClientes\\ApiCadastroDeClientes\\ApiCadastroDeClientes.csproj",
-      "projectName": "ApiCadastroDeClientes",
-      "projectPath": "C:\\Projetos\\ApiCadastroDeClientes\\ApiCadastroDeClientes\\ApiCadastroDeClientes.csproj",
+      "projectUniqueName": "C:\\Projetos\\ApiCadastroDeClientes\\ApiCadastroDeClientes\\ApiCadastro.csproj",
+      "projectName": "ApiCadastro",
+      "projectPath": "C:\\Projetos\\ApiCadastroDeClientes\\ApiCadastroDeClientes\\ApiCadastro.csproj",
       "packagesPath": "C:\\Users\\rf201\\.nuget\\packages\\",
       "outputPath": "C:\\Projetos\\ApiCadastroDeClientes\\ApiCadastroDeClientes\\obj\\",
       "projectStyle": "PackageReference",
@@ -10351,6 +10371,9 @@
           "projectReferences": {
             "C:\\Projetos\\ApiCadastroDeClientes\\ClassLibrary1\\Infra.csproj": {
               "projectPath": "C:\\Projetos\\ApiCadastroDeClientes\\ClassLibrary1\\Infra.csproj"
+            },
+            "C:\\Projetos\\ApiCadastroDeClientes\\Domini\\Dominio.csproj": {
+              "projectPath": "C:\\Projetos\\ApiCadastroDeClientes\\Domini\\Dominio.csproj"
             }
           }
         }

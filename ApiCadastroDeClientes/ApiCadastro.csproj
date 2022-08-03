@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\Infra.csproj" />
+    <ProjectReference Include="..\Domini\Dominio.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ApiCadastroDeClientes/1.0.0": {
         "dependencies": {
+          "Dominio": "1.0.0",
           "Flunt": "2.0.5",
           "Flunt.Extensions.Br": "1.0.1",
           "Infra": "1.0.0",
@@ -2393,6 +2394,15 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Dominio/1.0.0": {
+        "dependencies": {
+          "Flunt": "2.0.5",
+          "Flunt.Extensions.Br": "1.0.1"
+        },
+        "runtime": {
+          "Dominio.dll": {}
+        }
+      },
       "Infra/1.0.0": {
         "runtime": {
           "Infra.dll": {}
@@ -3707,6 +3717,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Infra/1.0.0": {
       "type": "project",

@@ -1,5 +1,4 @@
-﻿using ApiCadastroDeClientes.Model;
-using ApiCadastroDeClientes.Services;
+﻿
 
 namespace ApiCadastroDeClientes.ViewModel
 {

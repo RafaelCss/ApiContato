@@ -22,11 +22,11 @@ namespace ApiCadastroDeClientes.Valaidacoes
 
         private void AddNotification(Validacao notification)
         {
-           
+           AddNotification(notification);
         }
     }
 
-    public class Contrato : Contract<CadastroViewModel>
+    public class Contrato : Contract<Notification>
     {
 
     }
