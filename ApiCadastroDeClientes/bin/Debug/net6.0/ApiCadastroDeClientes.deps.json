@@ -10,6 +10,7 @@
         "dependencies": {
           "Flunt": "2.0.5",
           "Flunt.Extensions.Br": "1.0.1",
+          "Infra": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.7",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.16.1",
@@ -2391,6 +2392,11 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "Infra/1.0.0": {
+        "runtime": {
+          "Infra.dll": {}
+        }
       }
     }
   },
@@ -3701,6 +3707,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

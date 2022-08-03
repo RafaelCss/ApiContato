@@ -1,6 +1,4 @@
 ﻿
-using Flunt.Notifications;
-
 namespace ApiCadastroDeClientes.Interface
 {
     public interface IMetodosView 

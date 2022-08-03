@@ -3288,6 +3288,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.dll": {}
+        }
       }
     }
   },
@@ -10292,12 +10302,18 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Infra/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibrary1/Infra.csproj",
+      "msbuildProject": "../ClassLibrary1/Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Flunt >= 2.0.5",
       "Flunt.Extensions.Br >= 1.0.1",
+      "Infra >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.16.1",
@@ -10332,7 +10348,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projetos\\ApiCadastroDeClientes\\ClassLibrary1\\Infra.csproj": {
+              "projectPath": "C:\\Projetos\\ApiCadastroDeClientes\\ClassLibrary1\\Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

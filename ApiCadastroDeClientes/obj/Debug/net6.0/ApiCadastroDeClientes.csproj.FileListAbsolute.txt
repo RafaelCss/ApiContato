@@ -3,9 +3,7 @@ C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\obj\Debug\net6.0\ApiCada
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\obj\Debug\net6.0\ApiCadastroDeClientes.AssemblyInfoInputs.cache
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\obj\Debug\net6.0\ApiCadastroDeClientes.AssemblyInfo.cs
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\obj\Debug\net6.0\ApiCadastroDeClientes.csproj.CoreCompileInputs.cache
-C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\obj\Debug\net6.0\ApiCadastroDeClientes.MvcApplicationPartsAssemblyInfo.cs
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\obj\Debug\net6.0\ApiCadastroDeClientes.MvcApplicationPartsAssemblyInfo.cache
-C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\appsettings.Development.json
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\appsettings.json
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\ApiCadastroDeClientes.exe
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\ApiCadastroDeClientes.deps.json
@@ -277,3 +275,5 @@ C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\obj\Debug\net6.0\ApiCada
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\obj\Debug\net6.0\ref\ApiCadastroDeClientes.dll
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Flunt.dll
 C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Flunt.Extensions.Br.dll
+C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Infra.dll
+C:\Projetos\ApiCadastroDeClientes\ApiCadastroDeClientes\bin\Debug\net6.0\Infra.pdb

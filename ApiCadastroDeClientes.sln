@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCadastroDeClientes", "ApiCadastroDeClientes\ApiCadastroDeClientes.csproj", "{4D18F903-5ADF-4B8A-8C17-0E64E4CE1F00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiCadastroDeClientes", "ApiCadastroDeClientes\ApiCadastroDeClientes.csproj", "{4D18F903-5ADF-4B8A-8C17-0E64E4CE1F00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{FCD35BAF-DC77-4FC6-8238-FEDEA6CF7CCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{5186D2B3-0A24-4F2F-AB48-55634E3281DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "ClassLibrary1\Infra.csproj", "{FA403157-BE11-4D68-928C-74869A271758}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,17 @@ Global
 		{4D18F903-5ADF-4B8A-8C17-0E64E4CE1F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D18F903-5ADF-4B8A-8C17-0E64E4CE1F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D18F903-5ADF-4B8A-8C17-0E64E4CE1F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA403157-BE11-4D68-928C-74869A271758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA403157-BE11-4D68-928C-74869A271758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA403157-BE11-4D68-928C-74869A271758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA403157-BE11-4D68-928C-74869A271758}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D18F903-5ADF-4B8A-8C17-0E64E4CE1F00} = {FCD35BAF-DC77-4FC6-8238-FEDEA6CF7CCE}
+		{FA403157-BE11-4D68-928C-74869A271758} = {5186D2B3-0A24-4F2F-AB48-55634E3281DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E383514-77B6-4669-B39F-E1DA1852D238}
